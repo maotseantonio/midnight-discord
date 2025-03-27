@@ -372,7 +372,7 @@ body {
     /* improve borders */
     .reaction__23977 /* message reactions */,
     .reactionBtn__23977.forceShow__23977 /* add reaction button */ {
-        border-width: 2px;
+        border-width: 0px;
     }
 
     /* roundness */
