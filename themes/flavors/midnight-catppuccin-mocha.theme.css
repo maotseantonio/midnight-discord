@@ -11,15 +11,16 @@
 */
 
 /* import theme modules */
-@import url('https://raw.githubusercontent.com/maotseantonio/midnight-discord/refs/heads/master/build/midnight.css');
-
+/* @import url('https://refact0r.github.io/midnight-discord/build/midnight.css'); */
+/*@import url('https://raw.githubusercontent.com/maotseantonio/midnight-discord/refs/heads/master/build/midnight.css'); */
+@import 'midnight.css';
 body {
     /* font, change to '' for default discord font */
-    --font: 'figtree';
+    --font: 'JetBrainsMono Nerd Font';
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
-    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+    --divider-thickness: 3px; /* thickness of unread messages divider and highlighted message borders */
 
     /* animation/transition options */
     --animations: on; /* turn off to disable all midnight animations/transitions */
@@ -53,10 +54,10 @@ body {
 
     /* transparency/blur options */
     /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
-    --transparency-tweaks: off; /* turn on to remove some elements for better transparency */
+    --transparency-tweaks: on; /* turn on to remove some elements for better transparency */
     --remove-bg-layer: off; /* turn on to remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
-    --panel-blur: off; /* turn on to blur the background of panels */
-    --blur-amount: 12px; /* amount of blur */
+    --panel-blur: on; /* turn on to blur the background of panels */
+    --blur-amount: 5px; /* amount of blur */
     --bg-floating: var(--bg-3); /* you can set this to a more opaque color if floating panels look too transparent */
 
     /* chatbar options */
@@ -65,7 +66,7 @@ body {
     --chatbar-padding: 8px; /* padding of the chatbar */
 
     /* other options */
-    --small-user-panel: off; /* turn on to make the user panel smaller like in old discord */
+    --small-user-panel: on; /* turn on to make the user panel smaller like in old discord */
 }
 
 /* color options */
@@ -85,8 +86,8 @@ body {
     --bg-2: #313244; /* dark buttons */
     --bg-3: #181825; /* spacing, secondary elements */
     --bg-4: #1e1e2e; /* main background color */
-    --hover: hsla(230, 15%, 40%, 0.1); /* channels and buttons when hovered */
-    --active: hsla(230, 15%, 40%, 0.2); /* channels and buttons when clicked or selected */
+    --hover:var(--bg-1); /* channels and buttons when hovered */
+    --active: var(--bg-1); /* channels and buttons when clicked or selected */
     --active-2: hsla(230, 15%, 40%, 0.3); /* extra state for transparent buttons */
     --message-hover: hsla(230, 0%, 0%, 0.1); /* messages when hovered */
 
@@ -111,7 +112,7 @@ body {
 
     /* border colors */
     --border-light: hsl(230, 15%, 40%, 0.1); /* light border color */
-    --border: hsl(230, 15%, 40%, 0.2); /* normal border color */
+    --border: var(--purple-1); /* normal border color */
     --button-border: hsl(0, 0%, 100%, 0.1); /* neutral border color of buttons */
 
     /* base colors */
