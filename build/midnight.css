@@ -11,7 +11,7 @@ body {
     container-name: body;
 
     /* font, change to '' for default discord font */
-    --font: 'figtree';
+    --font: 'JetBrainsMono Nerd Font';
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
@@ -43,8 +43,8 @@ body {
     .chat_fb64c9 /* new thread panel */,
     .container_a592e1 /* server discovery */ {
         background-color: var(--background-base-lower);
-        border-radius: var(--radius-lg);
-        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-sm);
+        border: 3px solid var(--border-subtle);
         backdrop-filter: var(--panel-backdrop-filter);
     }
 
@@ -109,10 +109,7 @@ body {
         display: none;
     }
 
-    .chat_f75fb0 /* chat group outer */ {
-        border: none !important;
-        background: none;
-    }
+    .chat_f75fb0 /* chat group outer */,
     .container__133bf /* friends page group outer */,
     .page_c48ade {
         padding-bottom: var(--gap);
@@ -217,8 +214,8 @@ body {
     }
 
     .callContainer_cb9592 /* vc container */ {
-        border-radius: var(--radius-lg) !important;
-        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-sm) !important;
+        border: 3px solid var(--border-subtle);
         overflow: hidden;
     }
 
@@ -380,19 +377,19 @@ body {
     .hljs /* code block */,
     .imageWrapper_af017a /* image */,
     .container__9271d /* thread link */ {
-        border-radius: var(--radius-md);
+        border-radius: var(--radius-sm);
     }
 
     .outer_c0bea0 /* profile outer */, 
     .contentWrapper__08434  /* gif panel */ {
-        border-radius: var(--radius-lg);
+        border-radius: var(--radius-sm);
     }
     .inner_c0bea0 /* profile inner */ {
-        border-radius: calc(var(--radius-lg) - 4px);
+        border-radius: calc(var(--radius-sm) - 4px);
     }
 
     .outer_c0bea0 /* profile outer */ {
-        border: 1px solid var(--border-subtle);
+        border: 2px solid var(--border-subtle);
     }
     .root__24502 {
         background: none;
@@ -699,7 +696,7 @@ body {
         --polls-victor-fill: color-mix(in hsl, var(--green-2), transparent 90%);
 
         --card-primary-bg: var(--bg-3);
-        --card-secondary-bg: var(--bg-2);
+        --card-secondary-bg: red;
         --channel-icon: var(--text-4);
         --channels-default: var(--text-4);
 
