@@ -7,7 +7,7 @@
  */
 
 /* import theme modules */
-@import './midnight.css';
+@import 'https://raw.githubusercontent.com/maotseantonio/midnight-discord/refs/heads/master/build/midnight.css';
 /* gets rid of all rounded corners. remove if you want rounded corners.*/
  
 
