@@ -15,7 +15,7 @@ body {
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
-    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+    --divider-thickness: 2px; /* thickness of unread messages divider and highlighted message borders */
 }
 
 .visual-refresh {
