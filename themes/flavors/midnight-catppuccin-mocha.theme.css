@@ -12,7 +12,7 @@
 
 /* import theme modules */
 /* @import url('https://refact0r.github.io/system24/build/system24.css'); */
-@import './system24.css';
+@import url('https://raw.githubusercontent.com/maotseantonio/midnight-discord/refs/heads/master/build/system24.css');
 
 body {
     /* font, change to '' for default discord font */
